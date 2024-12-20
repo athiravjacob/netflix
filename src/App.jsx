@@ -7,7 +7,6 @@ import HomePage from './components/HomePage'
 import ProtectedRoutes from './components/ProtectedRoutes'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import componenta from './components/componeta'
 
 function App() {
   

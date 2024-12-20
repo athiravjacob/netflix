@@ -3,13 +3,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCNdxEFDYHh5r9ytNz7PuRpqRTCs6DKfGs",
-  authDomain: "netflix-auth-98b24.firebaseapp.com",
-  projectId: "netflix-auth-98b24",
-  storageBucket: "netflix-auth-98b24.firebasestorage.app",
-  messagingSenderId: "614258165896",
-  appId: "1:614258165896:web:68beb096bf3392611a373d",
-  measurementId: "G-N5QFHXG01R"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
